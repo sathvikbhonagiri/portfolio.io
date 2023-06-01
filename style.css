@@ -1,0 +1,194 @@
+
+body, figure, h1, h2, h3, h4, h5, h6, p, ul, li, input, textarea, button, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header #brand h1 {
+  font-size: 24px;
+}
+
+nav {
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 999;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+   margin-right:26px;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #999;
+}
+
+#hero {
+  background: linear-gradient(to bottom right, #ff66cc, #66ccff);
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+
+#about {
+  background: #F0E4D6;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#about img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#about h2 {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#skills {
+  background: #E6E2CF;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#skills h2 {
+  margin-bottom: 40px;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-list li {
+  background: #F6CF65;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+#projects {
+  background: #E8DDB5;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#projects h2 {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+#contact {
+  background: #F2F4F3;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Adjusting position of sections in navigation bar */
+nav ul li a[href="#about"],
+nav ul li a[href="#projects"],
+nav ul li a[href="#skills"],
+nav ul li a[href="#contact"] {
+  position: relative;
+}
+
+nav ul li a[href="#about"]:after,
+nav ul li a[href="#projects"]:after,
+nav ul li a[href="#skills"]:after,
+nav ul li a[href="#contact"]:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+nav ul li a[href="#about"]:hover:after,
+nav ul li a[href="#projects"]:hover:after,
+nav ul li a[href="#skills"]:hover:after,
+nav ul li a[href="#contact"]:hover:after {
+  opacity: 1;
+}
+
